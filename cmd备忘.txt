@@ -1,0 +1,54 @@
+步骤 2: 将你的代码推送到 GitHub 仓库
+假设你已经在本地有一个网站项目文件夹。下面是如何将文件夹中的内容推送到 GitHub 仓库。
+
+打开终端或命令行窗口，并进入你的网站项目目录。
+如果你还没有初始化 Git 仓库，运行以下命令：
+git init
+添加远程 GitHub 仓库地址：
+git remote add origin https://github.com/你的用户名/仓库名称.git
+将所有文件添加到 Git 仓库并提交：
+git add .
+git commit -m "Initial commit"
+推送代码到 GitHub：
+git push -u origin master
+步骤 3: 配置 GitHub Pages
+打开你刚才创建的 GitHub 仓库页面。
+点击右上角的 Settings（设置）按钮。
+在左侧菜单中找到 Pages（页面）选项。
+在 Source（源）下拉菜单中选择 main（或者是 master，取决于你使用的分支）。
+选择 /root 作为文件夹位置（意味着发布仓库的根目录）。
+点击 Save。
+步骤 4: 访问你的网站
+配置完成后，GitHub 会自动构建并发布你的页面。你可以在几分钟后访问它，网址格式为：
+
+https://你的用户名.github.io/仓库名称
+
+
+
+
+
+步骤 2: 使用本地服务器部署
+你可以选择使用一些轻量级的服务器来本地托管你的网站。以下是几种常见的选择：
+
+方法 1: 使用 Python 内置 HTTP 服务器（适用于 Python 3.x）
+如果你已经安装了 Python，你可以使用它自带的 HTTP 服务器来本地部署网站。
+
+步骤：
+打开终端（命令行）。
+
+导航到你的网站项目文件夹，例如：
+
+cd /path/to/your/cocktail-website
+启动 HTTP 服务器：
+
+对于 Python 3.x，运行：
+
+python3 -m http.server 8000
+如果是 Python 2.x，则使用：
+
+python -m SimpleHTTPServer 8000
+访问网站：在浏览器中访问 http://localhost:8000，你应该能够看到你的网站。
+
+
+## 微信验证
+编码txt文件是用于部署在freehosts4u中的网站通过微信验证所需的文件，部署在该根目录下，使得用户可以在微信中打开该网站。
